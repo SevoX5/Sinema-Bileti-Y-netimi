@@ -9,119 +9,119 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="715.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
-   <children>
-      <BorderPane layoutX="60.0" layoutY="59.0" prefHeight="715.0" prefWidth="1189.0" stylesheets="@designDashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <top>
-            <AnchorPane prefHeight="35.0" prefWidth="1194.0" styleClass="top-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
-               <children>
-                  <Button layoutX="981.0" layoutY="3.2" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" styleClass="close" stylesheets="@designDashboard.css" text="X" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="946.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" stylesheets="@designDashboard.css" text="-" AnchorPane.rightAnchor="56.40000000000009" AnchorPane.topAnchor="2.0">
-                     <font>
-                        <Font name="Marlett" size="12.0" />
-                     </font>
-                     <styleClass>
-                        <String fx:value="minimize" />
-                        <String fx:value="minimize" />
-                        <String fx:value="minimize" />
-                     </styleClass>
-                  </Button>
-                  <Label layoutX="43.0" layoutY="10.0" text="Sinema Bileti Rezervasyon Yönetimi">
-                     <font>
-                        <Font name="Microsoft Sans Serif" size="13.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="20.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/play.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-         </top>
-         <left>
-            <AnchorPane prefHeight="680.0" prefWidth="162.0" styleClass="nav-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="102.0" fitWidth="131.0" layoutX="51.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/user%20(3).png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="59.0" layoutY="148.0" text="Welcome" textFill="#fffcfc">
-                     <font>
-                        <Font name="Microsoft Sans Serif" size="17.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="66.0" layoutY="177.0" text="Admin" textFill="WHITE">
-                     <font>
-                        <Font name="Microsoft Sans Serif" size="20.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="44.0" layoutY="269.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Dashboard">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Button>
-                  <Button layoutX="42.0" layoutY="304.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Film Ekle">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Button>
-                  <Button layoutX="42.0" layoutY="339.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="149.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Vizyondaki Filmler">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Button>
-                  <Button layoutX="42.0" layoutY="374.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Gösterim Ayarları">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Button>
-                  <Button layoutX="42.0" layoutY="409.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="151.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Müşteriler">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Button>
-                  <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="18.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/speed%20(1).png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="21.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/add%20(1).png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="21.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/browser.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="21.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/customer%20(2).png" />
-                     </image>
-                  </ImageView>
-                  <Button layoutX="-1.0" layoutY="577.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="191.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="                Sign Out     ">
-                     <font>
-                        <Font name="System Bold" size="13.0" />
-                     </font>
-                  </Button>
-                  <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="29.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/logout%20(3).png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="21.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../Downloads/play-button%20(1).png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-         </left>
-         <center>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-         </center>
-      </BorderPane>
-   </children>
+<AnchorPane prefHeight="715.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinema_bileti_yonetimi.YanPanelController">
+    <children>
+        <BorderPane layoutX="60.0" layoutY="59.0" prefHeight="715.0" prefWidth="1189.0" stylesheets="@designDashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="35.0" prefWidth="1194.0" styleClass="top-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button layoutX="981.0" layoutY="3.2" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" styleClass="close" stylesheets="@designDashboard.css" text="X" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="946.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" stylesheets="@designDashboard.css" text="-" AnchorPane.rightAnchor="56.40000000000009" AnchorPane.topAnchor="2.0">
+                            <font>
+                                <Font name="Marlett" size="12.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="minimize" />
+                            </styleClass>
+                        </Button>
+                        <Label layoutX="43.0" layoutY="10.0" text="Sinema Bileti Rezervasyon Yönetimi">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="13.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="20.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@playIcon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane prefHeight="680.0" prefWidth="162.0" styleClass="nav-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="102.0" fitWidth="131.0" layoutX="51.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@user.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="59.0" layoutY="148.0" text="Welcome" textFill="#fffcfc">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="66.0" layoutY="177.0" text="Admin" textFill="WHITE">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="44.0" layoutY="269.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Dashboard">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Button>
+                        <Button layoutX="42.0" layoutY="304.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Film Ekle">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Button>
+                        <Button layoutX="42.0" layoutY="339.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="149.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Vizyondaki Filmler">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Button>
+                        <Button layoutX="42.0" layoutY="374.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Gösterim Ayarları">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Button>
+                        <Button layoutX="42.0" layoutY="409.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="151.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Müşteriler">
+                            <font>
+                                <Font size="14.0" />
+                            </font></Button>
+
+                        <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="18.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@dashboardIcon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="21.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@addIcon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="21.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@playIcon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="21.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@ListIcon.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="21.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@customerIcon.png" />
+                            </image>
+                        </ImageView>
+
+                        <Button layoutX="-1.0" layoutY="577.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="191.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="                Sign Out     ">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="29.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logoutIcon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </left>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
 </AnchorPane>
