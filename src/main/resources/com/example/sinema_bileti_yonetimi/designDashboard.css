@@ -45,3 +45,173 @@
     -fx-background-color: #ae2d3c; /* Üzerine gelindiğinde arka plan rengi */
 }
 
+
+/* Ana beyaz arka plan ve yumuşak gölge efekti */
+.bg-white {
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 8, 0, 0, 0);
+    -fx-background-radius: 8px;
+}
+
+/* Beyaz alanın üzerine gelince gölgeyi belirginleştir */
+.bg-white:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8, 0, 0, 0);
+}
+
+
+
+
+/* Mavi Kart: Sağ köşeleri yuvarlak geçişli arka plan */
+.card1 {
+    -fx-background-color: linear-gradient(to right, #2b428c, #2e58ab);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+
+/* Mavi Kart Sol Bölüm: Daha koyu mavi geçiş */
+.card1-left {
+    -fx-background-color: linear-gradient(to right, #213778, #2b428c);
+}
+
+/* Mor Kart: Sağ köşeleri yuvarlak geçişli arka plan */
+.card2 {
+    -fx-background-color: linear-gradient(to right, #772d90, #a42fb8);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+
+/* Mor Kart Sol Bölüm: Koyu mor geçiş */
+.card2-left {
+    -fx-background-color: linear-gradient(to right, #641f7f, #772d90);
+}
+
+/* Kırmızı/Pembe Kart: Sağ köşeleri yuvarlak geçişli arka plan */
+.card3 {
+    -fx-background-color: linear-gradient(to right, #9d2249, #cc1c5a);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+
+/* Kırmızı Kart Sol Bölüm: Koyu kırmızı geçiş */
+.card3-left {
+    -fx-background-color: linear-gradient(to right, #891a41, #9d2249);
+}
+
+/* Kartların üzerine gelince oluşan genel gölge efekti */
+.card:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0);
+}
+
+
+/*Ekle Tasarımı Sevo*/
+/* Metin giriş alanı (TextField) tasarımı */
+.add-textfield {
+    -fx-background-color: #fff;             /* Arka planı beyaz yapar */
+    -fx-background-radius: 0px 5px 0px 0px; /* Sadece sağ üst köşeyi yuvarlar */
+    -fx-border-color: #1e242e;              /* Kenarlık rengini koyu gri/lacivert yapar */
+    -fx-border-width: .8px;                 /* İnce bir kenarlık kalınlığı belirler */
+    -fx-border-radius: 0px 5px 0px 0px;     /* Kenarlığın sağ üst köşesini yuvarlar */
+    -fx-font-size: 13px;                    /* İçindeki metin boyutunu 13px yapar */
+}
+/* Metin alanına tıklandığında (odaklandığında) stil */
+.add-textfield:focused {
+    -fx-border-color: #ae2d3c;     /* Kenarlık rengini kırmızı/bordo yapar */
+    -fx-border-width: 1.5px;       /* Kenarlığı biraz kalınlaştırır */
+}
+
+/* Ekleme butonu tasarımı */
+.ekle-btn {
+    -fx-background-color: #3149a1; /* Buton arka planını mavi yapar */
+        -fx-background-radius: 8px;    /* Köşeleri 8px oranında yumuşatır */
+        -fx-text-fill: #fff;           /* Buton üzerindeki metni beyaz yapar */
+        -fx-font-size: 14px;           /* Metin boyutunu 14px olarak ayarlar */
+    }
+    /* Ekle butonu üzerine gelindiğinde rengini açar */
+    .ekle-btn:hover {
+        -fx-background-color: #3c71c4;
+    }
+
+
+    /* Güncelle butonu tasarımı */
+    .guncelle-btn {
+        -fx-background-color: #337254; /* Buton arka planını yeşil yapar */
+        -fx-background-radius: 8px;    /* Köşeleri 8px oranında yumuşatır */
+        -fx-text-fill: #fff;           /* Yazı rengini beyaz yapar */
+        -fx-font-size: 14px;           /* Yazı boyutunu 14px yapar */
+        -fx-cursor: hand;              /* Fare ile üzerine gelince el simgesi gösterir */
+    }
+    /* Güncelle butonu üzerine gelindiğinde rengini açar */
+    .guncelle-btn:hover {
+        -fx-background-color: #3ea185;
+    }
+
+    /* Silme butonu tasarımı */
+    .sil-btn {
+        -fx-background-color: #962934; /* Buton arka planını koyu kırmızı yapar */
+        -fx-background-radius: 8px;    /* Köşeleri 8px oranında yumuşatır */
+        -fx-text-fill: #fff;           /* Yazı rengini beyaz yapar */
+        -fx-font-size: 14px;           /* Yazı boyutunu 14px yapar */
+        -fx-cursor: hand;              /* Üzerine gelince el simgesi gösterir */
+    }
+    /* Silme butonu üzerine gelindiğinde rengini açar */
+    .sil-btn:hover {
+        -fx-background-color: #d33d63;
+    }
+
+
+    /* Temizle butonu tasarımı */
+    .temizle-btn {
+        -fx-background-color: #933b80; /* Buton arka planını mor yapar */
+        -fx-background-radius: 8px;    /* Köşeleri 8px oranında yumuşatır */
+        -fx-text-fill: #fff;           /* Yazı rengini beyaz yapar */
+        -fx-font-size: 14px;           /* Yazı boyutunu 14px yapar */
+        -fx-cursor: hand;              /* Üzerine gelince el simgesi gösterir */
+    }
+
+    /* Temizle butonu üzerine gelindiğinde rengini açar */
+    .temizle-btn:hover {
+        -fx-background-color: #c242be;
+    }
+
+
+   /* Arama çubuğu tasarımı */
+   .search {
+       -fx-background-color: #fff;             /* Arka planı beyaz yapar */
+       -fx-background-radius: 0px 10px 0px 0px; /* Arka plan sağ üst köşeyi yuvarlar */
+       -fx-border-color: #1e242e;              /* Kenarlık rengi koyu lacivert */
+       -fx-border-width: 1px;                  /* Kenarlık kalınlığı */
+       -fx-font-size: 14px;                    /* Metin boyutu */
+       -fx-border-radius: 0px 10px 0px 0px;     /* Kenarlık sağ üst köşeyi yuvarlar */
+       -fx-padding: 0px 0px 0px 25px;          /* Metni soldan 25px içeriden başlatır */
+   }
+
+   /* Arama çubuğuna tıklandığında (odaklandığında) stil */
+   .search:focused {
+       -fx-border-color: #ae2d3c;              /* Odaklanınca kenarlık kırmızı olur */
+       -fx-border-width: 2px;                  /* Odaklanınca kenarlık kalınlaşır */
+   }
+
+   /* Tablo görünümünün genel çerçeve ayarları */
+   .tablo {
+       -fx-background-color: #fff;         /* Tablo arka planını beyaz yapar */
+       -fx-background-radius: 10px;        /* Arka plan köşelerini 10 piksel yuvarlar */
+       -fx-border-color: #ae2d3c;          /* Tablo çevresine kırmızımsı bir kenarlık ekler */
+       -fx-border-radius: 10px;            /* Kenarlık köşelerini 10 piksel yuvarlar */
+       -fx-fill: #fff;                     /*dolgu rengi*/
+   }
+
+   /* Tablo başlık alanı tasarımı */
+   .tablo .column-header-background {
+       -fx-background-color: linear-gradient(to top left, #1e242e, #ae2d3c); /* Lacivertten kırmızıya çapraz geçiş */
+       -fx-background-insets: 0 0 0 0; /* Arka planın kenar boşluklarını sıfırlar */
+       -fx-background-radius: 10px 0px 0px 0px; /* Sadece sol üst köşeyi oval yapar */
+   }
+
+   /* Tablo sütun başlıkları ve boş kalan dolgu alanının ayarları */
+   .tablo .column-header, .tablo .filler {
+       -fx-background-color: transparent; /* Başlıkların arka planını şeffaf yapar */
+       -fx-size: 50px;                   /* Başlık yüksekliğini 50 piksel olarak ayarlar */
+       -fx-fill: #fff;                   /* İçerik dolgu rengini beyaz yapar */
+   }
+
+   /* Tablo sütun başlıklarının içindeki metin (etiket) ayarları */
+   .tablo .column-header .label {
+       -fx-text-fill: #fff;              /* Başlık metnini beyaz renk yapar */
+   }
