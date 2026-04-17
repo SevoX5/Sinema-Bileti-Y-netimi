@@ -1,0 +1,69 @@
+/* Formun arka planını belirleyen sınıf */
+.bg-form {
+    /* Sol alt köşeden sağ üst köşeye doğru giden renk geçişi (gradyan) */
+    /* Renkler: Koyu gri (#1e242e) -> Kırmızımsı ton (#ae2d3c) */
+    -fx-background-color: linear-gradient(to top right, #1e242e, #ae2d3c);
+}
+
+/* Kapatma butonu varsayılan hali */
+.close {
+    -fx-background-color: transparent; /* Arkaplan şeffaf */
+    -fx-cursor: hand;                  /* Üzerine gelince el imleci */
+}
+
+/* Kapatma butonu üzerine gelince (hover) */
+.close:hover {
+    -fx-background-color: #ff5151;     /* Arkaplan kırmızımtırak olur */
+}
+
+/* Alt simge butonu varsayılan hali */
+.minimize {
+    -fx-background-color: transparent; /* Arkaplan şeffaf */
+    -fx-cursor: hand;                  /* Üzerine gelince el imleci */
+}
+
+/* Alt simge butonu üzerine gelince (hover) */
+.minimize:hover {
+    -fx-background-color: #c5273f;     /* Arkaplan koyu kırmızı/pembe olur */
+}
+
+
+/* Metin alanı varsayılan stili */
+.textfield {
+    -fx-background-color: transparent; /* Arkaplan şeffaf */
+    -fx-text-inner-color: #fff;        /* Yazı rengi beyaz */
+    -fx-border-color: #d63333;          /* Kenarlık rengi kırmızı */
+    -fx-border-width: 0px 0px .4px 0px;  /* Sadece alt kenarlık */
+    -fx-text-size: 13px;                /* Yazı boyutu */
+}
+
+/* Metin alanına odaklanınca */
+.textfield:focused {
+    -fx-border-color: #fb6363;          /* Kenarlık rengi açılır */
+    -fx-border-width: 0px 0px 1px 0px;   /* Alt kenarlık kalınlaşır */
+}
+
+
+/* Giriş butonu varsayılan stili */
+.login-btn {
+    /* Mavi tonlarında degrade arkaplan */
+    -fx-background-color: linear-gradient(to bottom right, #35529d, #2371d0);
+    -fx-background-radius: 8px;         /* Köşe ovalleşmesi */
+    -fx-text-fill: #fff;                /* Buton yazı rengi beyaz */
+    -fx-font-size: 14px;                /* Yazı boyutu */
+    -fx-cursor: hand;                   /* El imleci */
+}
+
+/* Giriş butonu üzerine gelince */
+.login-btn:hover {
+    /* Daha açık mavi tonlarında degrade */
+    -fx-background-color: linear-gradient(to bottom right, #3862c2, #4284d0);
+}
+
+/* Hyperlink (Bağlantı) stili */
+.hyperlink {
+    -fx-underline: false;       /* Alt çizgiyi kaldırır */
+    /*-fx-text-fill: #fb6363;      Yazı rengini kırmızı/pembe yapar */
+    -fx-border-color: transparent; /* Çerçeve rengini şeffaf yapar */
+    -fx-border-width: 0px;      /* Çerçeve kalınlığını sıfırlar */
+}
