@@ -48,7 +48,7 @@
                <children>
                   <ImageView fitHeight="102.0" fitWidth="131.0" layoutX="51.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/user%20(3).png" />
+                        <Image url="@user.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="59.0" layoutY="148.0" text="Welcome" textFill="#fffcfc">
@@ -83,22 +83,22 @@
                      </font></Button>
                   <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="18.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/speed%20(1).png" />
+                        <Image url="@dashboardIcon.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="21.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/add%20(1).png" />
+                        <Image url="@addIcon.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="21.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/browser.png" />
+                        <Image url="@ListIcon.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="21.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/customer%20(2).png" />
+                        <Image url="@customerIcon.png" />
                      </image>
                   </ImageView>
                   <Button layoutX="-1.0" layoutY="577.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="191.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="                Sign Out     ">
@@ -108,12 +108,12 @@
                   </Button>
                   <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="29.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/logout%20(3).png" />
+                        <Image url="@logoutIcon.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="21.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../Downloads/play-button%20(1).png" />
+                        <Image url="@playIcon.png" />
                      </image>
                   </ImageView>
                </children>
