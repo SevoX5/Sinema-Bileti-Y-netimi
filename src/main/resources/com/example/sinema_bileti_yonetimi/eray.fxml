@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="671.0" prefWidth="995.0">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="4.0" prefHeight="236.0" prefWidth="987.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card1-left" stylesheets="@designDashboard.css">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                                 <image>
+                                    <Image url="@ticket.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="88.0" layoutY="153.0" text="Toplam Satılan Bilet" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="14.0" text="1500" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="card1" />
+                        <String fx:value="card" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="337.0" layoutY="15.0" prefHeight="200.0" prefWidth="321.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card2-left" stylesheets="@designDashboard.css">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                                 <image>
+                                    <Image url="@dollar.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="80.0" layoutY="151.0" text="Günlük Toplam Kazanç" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="14.0" text="1500" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="card2" />
+                        <String fx:value="card" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane layoutX="675.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card3-left" stylesheets="@designDashboard.css">
+                           <children>
+                              <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                                 <image>
+                                    <Image url="@play-button%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="106.0" layoutY="154.0" text="Mevcut Filmler" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" layoutX="220.0" layoutY="17.0" text="1500" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="card3" />
+                        <String fx:value="card" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="413.0" fitWidth="980.0" layoutX="5.0" layoutY="252.0">
+               <image>
+                  <Image url="@WIN_20260428_17_11_54_Pro.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="11.0" layoutY="14.0" prefHeight="236.0" prefWidth="987.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card1-left" stylesheets="@designDashboard.css">
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                           <image>
+                              <Image url="@ticket.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="14.0" text="1500" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="card1" />
+                  <String fx:value="card" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="337.0" layoutY="15.0" prefHeight="200.0" prefWidth="321.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card2-left" stylesheets="@designDashboard.css">
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                           <image>
+                              <Image url="@dollar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="80.0" layoutY="151.0" text="Günlük Toplam Kazanç" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="14.0" text="1500" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="card2" />
+                  <String fx:value="card" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="675.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card3-left" stylesheets="@designDashboard.css">
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="6.0" layoutY="65.0">
+                           <image>
+                              <Image url="@play-button%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="106.0" layoutY="154.0" text="Mevcut Filmler" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="220.0" layoutY="17.0" text="1500" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="card3" />
+                  <String fx:value="card" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="98.0" layoutY="163.0" text="Toplam Satılan Bilet" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="413.0" fitWidth="980.0" layoutX="15.0" layoutY="262.0">
+         <image>
+            <Image url="@WIN_20260428_17_11_54_Pro.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
