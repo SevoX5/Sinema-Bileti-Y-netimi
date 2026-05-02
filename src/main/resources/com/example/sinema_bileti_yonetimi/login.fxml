@@ -31,7 +31,7 @@
             </Button>
             <TextField fx:id="signin_username" layoutX="467.0" layoutY="161.0" prefHeight="34.0" prefWidth="158.0" promptText="Username" styleClass="textfield" stylesheets="@designLogin.css" />
             <PasswordField fx:id="signin_password" layoutX="467.0" layoutY="214.0" prefHeight="34.0" prefWidth="158.0" promptText="Password" styleClass="textfield" stylesheets="@designLogin.css" />
-            <Button fx:id="signin_loginBtn" layoutX="497.0" layoutY="276.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@designLogin.css" text="LOGİN" />
+            <Button fx:id="signin_loginBtn" layoutX="497.0" layoutY="276.0" mnemonicParsing="false" onAction="#signin" prefHeight="34.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@designLogin.css" text="LOGİN" />
             <Hyperlink fx:id="signin_createAccount" layoutX="484.0" layoutY="329.0" onAction="#switchForm" text="Create a new account" textFill="WHITE" />
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="526.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -64,7 +64,7 @@
             </Button>
             <TextField fx:id="signUp_username" layoutX="468.0" layoutY="172.0" prefHeight="34.0" prefWidth="158.0" promptText="Username" styleClass="textfield" stylesheets="@designLogin.css" />
             <PasswordField fx:id="signUp_password" layoutX="467.0" layoutY="214.0" prefHeight="34.0" prefWidth="158.0" promptText="Password" styleClass="textfield" stylesheets="@designLogin.css" />
-            <Button fx:id="signUp_registerBtn" layoutX="497.0" layoutY="276.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@designLogin.css" text="REGİSTER" />
+            <Button fx:id="signUp_registerBtn" layoutX="497.0" layoutY="276.0" mnemonicParsing="false" onAction="#signUp" prefHeight="34.0" prefWidth="97.0" styleClass="login-btn" stylesheets="@designLogin.css" text="REGİSTER" />
             <Hyperlink fx:id="signUp_AlreadyHaveAccount" layoutX="484.0" layoutY="329.0" onAction="#switchForm" text="Already have an account" textFill="WHITE" />
             <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="526.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                <image>

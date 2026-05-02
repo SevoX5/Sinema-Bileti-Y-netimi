@@ -14,18 +14,18 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="715.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinema_bileti_yonetimi.YanPanelController">
+<AnchorPane fx:id="anasayfa_form" prefHeight="715.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinema_bileti_yonetimi.FXMLdashboardKontrol">
     <children>
         <BorderPane layoutX="60.0" layoutY="59.0" prefHeight="715.0" prefWidth="1189.0" stylesheets="@designDashboard.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <top>
                 <AnchorPane prefHeight="35.0" prefWidth="1194.0" styleClass="top-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
                     <children>
-                        <Button layoutX="981.0" layoutY="3.2" mnemonicParsing="false" prefHeight="26.0" prefWidth="53.0" styleClass="close" stylesheets="@designDashboard.css" text="X" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
+                        <Button fx:id="anasayfa_kapatma" layoutX="981.0" layoutY="3.2" mnemonicParsing="false" onAction="#kapama" prefHeight="26.0" prefWidth="53.0" styleClass="close" stylesheets="@designDashboard.css" text="X" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
                             <font>
                                 <Font name="System Bold" size="12.0" />
                             </font>
                         </Button>
-                        <Button layoutX="946.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" stylesheets="@designDashboard.css" text="-" AnchorPane.rightAnchor="56.40000000000009" AnchorPane.topAnchor="2.0">
+                        <Button fx:id="anasayfa_kucult" layoutX="946.0" layoutY="2.0" mnemonicParsing="false" onAction="#kucultme" prefHeight="26.0" prefWidth="52.0" stylesheets="@designDashboard.css" text="-" AnchorPane.rightAnchor="56.40000000000009" AnchorPane.topAnchor="2.0">
                             <font>
                                 <Font name="Marlett" size="12.0" />
                             </font>
@@ -59,28 +59,28 @@
                                 <Font name="Microsoft Sans Serif" size="17.0" />
                             </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="66.0" layoutY="177.0" text="Admin" textFill="WHITE">
+                        <Label fx:id="username" alignment="CENTER" layoutX="66.0" layoutY="177.0" text="Admin" textFill="WHITE">
                             <font>
                                 <Font name="Microsoft Sans Serif" size="20.0" />
                             </font>
                         </Label>
-                        <Button layoutX="44.0" layoutY="269.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Dashboard">
+                        <Button fx:id="dashboard_btn" layoutX="44.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="142.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Dashboard">
                             <font>
                                 <Font size="14.0" />
                             </font></Button>
-                        <Button layoutX="42.0" layoutY="304.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Film Ekle">
+                        <Button fx:id="filmEkle_btn" layoutX="42.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Film Ekle">
                             <font>
                                 <Font size="14.0" />
                             </font></Button>
-                        <Button layoutX="42.0" layoutY="339.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="149.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Vizyondaki Filmler">
+                        <Button fx:id="vizyondakiFilmler_btn" layoutX="42.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="149.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Vizyondaki Filmler">
                             <font>
                                 <Font size="14.0" />
                             </font></Button>
-                        <Button layoutX="42.0" layoutY="374.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Gösterim Ayarları">
+                        <Button fx:id="gosterimAyarlari_btn" layoutX="42.0" layoutY="374.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="150.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Gösterim Ayarları">
                             <font>
                                 <Font size="14.0" />
                             </font></Button>
-                        <Button layoutX="42.0" layoutY="409.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="151.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Müşteriler">
+                        <Button fx:id="musteriler_btn" layoutX="42.0" layoutY="409.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="151.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="Müşteriler">
                             <font>
                                 <Font size="14.0" />
                             </font></Button>
@@ -116,7 +116,7 @@
                             </image>
                         </ImageView>
 
-                        <Button layoutX="7.0" layoutY="577.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="                Sign Out     ">
+                        <Button fx:id="signOut_btn" layoutX="7.0" layoutY="577.0" mnemonicParsing="false" onAction="#kapama" prefHeight="38.0" prefWidth="183.0" styleClass="nav-btn" stylesheets="@designDashboard.css" text="                Sign Out     ">
                             <font>
                                 <Font name="System Bold" size="13.0" />
                             </font>
@@ -130,41 +130,41 @@
                 </AnchorPane>
             </left>
             <center>
-                <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false" BorderPane.alignment="CENTER">
+                <AnchorPane fx:id="filmEkle_form" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
                   <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="650.0" prefWidth="298.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                      <children>
                         <AnchorPane layoutX="85.0" layoutY="37.0" prefHeight="167.0" prefWidth="127.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                            <children>
-                              <ImageView fitHeight="167.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" styleClass="bg-white" />
+                              <ImageView fx:id="filmEkle_gorsel" fitHeight="167.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" styleClass="bg-white" />
                            </children>
                         </AnchorPane>
                         <Label layoutX="41.0" layoutY="280.0" text="Film Adı :" />
-                        <TextField layoutX="97.0" layoutY="272.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                        <TextField fx:id="filmEkle_filmAdi" layoutX="97.0" layoutY="272.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
                         <Label layoutX="36.0" layoutY="321.0" text="Film Türü :" />
-                        <TextField layoutX="98.0" layoutY="313.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                        <TextField fx:id="filmEkle_filmTuru" layoutX="98.0" layoutY="313.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
                         <Label layoutX="30.0" layoutY="355.0" text="Film Süresi :" />
-                        <TextField layoutX="98.0" layoutY="350.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                        <TextField fx:id="filmEkle_filmSuresi" layoutX="98.0" layoutY="350.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
                         <Label layoutX="26.0" layoutY="393.0" text="Yayın Tarihi :" />
-                        <TextField layoutX="99.0" layoutY="388.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
-                        <Button layoutX="123.0" layoutY="217.0" mnemonicParsing="false" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Import" />
-                        <Button layoutX="13.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Ekle" />
-                        <Button layoutX="105.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="guncelle-btn" stylesheets="@designDashboard.css" text="Güncelle" />
-                        <Button layoutX="199.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="sil-btn" stylesheets="@designDashboard.css" text="Sil" />
-                        <Button layoutX="199.0" layoutY="509.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="temizle-btn" text="Temizle" />
+                        <TextField fx:id="filmEkle_YayinTarihi" layoutX="99.0" layoutY="388.0" prefHeight="26.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                        <Button fx:id="filmEkle_importBtn" layoutX="123.0" layoutY="217.0" mnemonicParsing="false" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Import" />
+                        <Button fx:id="filmEkle_ekleBtn" layoutX="13.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Ekle" />
+                        <Button fx:id="filmEkle_guncelleBtn" layoutX="105.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="guncelle-btn" stylesheets="@designDashboard.css" text="Güncelle" />
+                        <Button fx:id="filmEkle_silBtn" layoutX="199.0" layoutY="456.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="sil-btn" stylesheets="@designDashboard.css" text="Sil" />
+                        <Button fx:id="filmEkle_temizleBtn" layoutX="199.0" layoutY="509.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="86.0" styleClass="temizle-btn" text="Temizle" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="328.0" layoutY="15.0" prefHeight="650.0" prefWidth="657.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                      <children>
-                        <TableView layoutX="14.0" layoutY="68.0" prefHeight="574.0" prefWidth="633.0" styleClass="tablo" stylesheets="@designDashboard.css">
+                        <TableView fx:id="filmEkle_tablo" layoutX="14.0" layoutY="68.0" prefHeight="574.0" prefWidth="633.0" styleClass="tablo" stylesheets="@designDashboard.css">
                           <columns>
-                            <TableColumn prefWidth="183.20001220703125" text="Sinema Bileti " />
-                            <TableColumn prefWidth="116.80001831054688" text="Film Türü" />
-                              <TableColumn prefWidth="167.199951171875" text="Film Süresi" />
-                              <TableColumn minWidth="0.0" prefWidth="198.4000244140625" text="Yayın Tarihi" />
+                            <TableColumn fx:id="filmEkle_kln_filmAdi" prefWidth="183.20001220703125" text="Film Adı" />
+                            <TableColumn fx:id="filmEkle_kln_filmTuru" prefWidth="116.80001831054688" text="Film Türü" />
+                              <TableColumn fx:id="filmEkle_kln_filmSuresi" prefWidth="167.199951171875" text="Film Süresi" />
+                              <TableColumn fx:id="filmEkle_kln_yayinTarihi" minWidth="0.0" prefWidth="198.4000244140625" text="Yayın Tarihi" />
                           </columns>
                         </TableView>
-                        <TextField layoutX="38.0" layoutY="22.0" prefHeight="25.0" prefWidth="254.0" promptText="Search" styleClass="search" stylesheets="@designDashboard.css" />
+                        <TextField fx:id="filmEkle_Search" layoutX="38.0" layoutY="22.0" prefHeight="25.0" prefWidth="254.0" promptText="Search" styleClass="search" stylesheets="@designDashboard.css" />
                         <ImageView fitHeight="19.0" fitWidth="25.0" layoutX="43.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@searchIcon.png" />
@@ -175,99 +175,96 @@
                </children></AnchorPane>
             </center>
         </BorderPane>
-      <AnchorPane layoutX="194.0" layoutY="36.0" prefHeight="677.0" prefWidth="995.0" visible="false">
+      <AnchorPane fx:id="vizyondakiFilmler_form" layoutX="194.0" layoutY="36.0" prefHeight="677.0" prefWidth="995.0" visible="false">
          <children>
             <AnchorPane layoutX="211.0" layoutY="124.0" prefHeight="677.6" prefWidth="995.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="256.0" prefWidth="934.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+            <AnchorPane layoutX="15.0" layoutY="7.0" prefHeight="274.0" prefWidth="962.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
                <children>
                   <Label layoutX="26.0" layoutY="38.0" text="Film Adı :" />
                   <Label layoutX="22.0" layoutY="87.0" text="Film Türü :" />
                   <Label layoutX="42.0" layoutY="138.0" prefHeight="18.0" prefWidth="36.0" text="Tarih :" />
-                  <Button layoutX="135.0" layoutY="190.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #3b5998; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Listele" />
-                  <TableView fx:id="table_availableMovies" layoutX="330.0" layoutY="15.0" prefHeight="210.0" prefWidth="575.0" style="-fx-border-color: #800000; -fx-border-radius: 5;" styleClass="tablo" stylesheets="@designDashboard.css">
+                  <Button fx:id="vizyondakiFilmler_listeleBtn" layoutX="135.0" layoutY="190.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #3b5998; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Listele" />
+                  <TableView fx:id="vizyondakiFilmler_tablo" layoutX="330.0" layoutY="15.0" prefHeight="236.0" prefWidth="618.0" style="-fx-border-color: #800000; -fx-border-radius: 5;" styleClass="tablo" stylesheets="@designDashboard.css">
                      <columns>
-                        <TableColumn fx:id="col_availableTitle" prefWidth="168.0" text="Film Adı" />
-                        <TableColumn fx:id="col_availableGenre" prefWidth="204.0" text="Film Türü" />
-                        <TableColumn fx:id="col_availableDate" prefWidth="197.5999755859375" text="Yayın Tarihi" />
+                        <TableColumn fx:id="vizyondakiFilmler_kln_filmAdi" prefWidth="183.199951171875" text="Film Adı" />
+                        <TableColumn fx:id="vizyondakiFilmler_kln_filmTuru" prefWidth="228.800048828125" text="Film Türü" />
+                        <TableColumn fx:id="vizyondakiFilmler_kln_yayinTarihi" prefWidth="205.5999755859375" text="Yayın Tarihi" />
                      </columns>
                   </TableView>
-                  <TextField layoutX="92.0" layoutY="25.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
-                  <TextField layoutX="92.0" layoutY="77.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
-                  <TextField layoutX="92.0" layoutY="127.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                  <TextField fx:id="vizyondakiFilmler_filmAdi" layoutX="92.0" layoutY="25.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                  <TextField fx:id="vizyondakiFilmler_filmTürü" layoutX="92.0" layoutY="77.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
+                  <TextField fx:id="vizyondakiFilmler_tarih" layoutX="92.0" layoutY="127.0" prefHeight="35.0" prefWidth="187.0" styleClass="add-textfield" stylesheets="@designDashboard.css" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="25.0" layoutY="291.0" prefHeight="359.0" prefWidth="934.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+            <AnchorPane layoutX="15.0" layoutY="291.0" prefHeight="359.0" prefWidth="962.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
                <children>
-                  <AnchorPane layoutX="35.0" layoutY="25.0" prefHeight="200.0" prefWidth="140.0" style="-fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-color: #f9f9f9;">
-                     <children>
-                        <ImageView fx:id="img_availablePoster" fitHeight="190.0" fitWidth="130.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
-                     </children>
-                  </AnchorPane>
-                  <Label fx:id="lbl_availableTitle" alignment="CENTER" layoutX="35.0" layoutY="240.0" prefWidth="140.0" text="Label" textAlignment="CENTER">
+                  <AnchorPane layoutX="113.0" layoutY="25.0" prefHeight="200.0" prefWidth="140.0" style="-fx-border-color: #ccc; -fx-border-radius: 5; -fx-background-color: #f9f9f9;" />
+                  <Label fx:id="vizyondakiFilmler_baslik" alignment="CENTER" layoutX="115.0" layoutY="240.0" prefWidth="140.0" text="Label" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="35.0" layoutY="265.0" prefWidth="140.0" text="Title" textFill="#6b6b6b" />
-                  <Label layoutX="409.0" layoutY="12.0" text="Bilet Satın Al">
+                  <Label alignment="CENTER" layoutX="115.0" layoutY="265.0" prefWidth="140.0" text="Title" textFill="#6b6b6b" />
+                  <Label layoutX="505.0" layoutY="12.0" text="Bilet Satın Al">
                      <font>
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
-                  <Label layoutX="420.0" layoutY="80.0" text="Adet">
+                  <Label layoutX="499.0" layoutY="80.0" text="Adet">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="527.0" layoutY="80.0" text="Fiyat ($)">
+                  <Label layoutX="606.0" layoutY="80.0" text="Fiyat ($)">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="310.0" layoutY="125.0" text="Special Class :">
+                  <Label layoutX="408.0" layoutY="125.0" text="VIP Salon :">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Spinner fx:id="spinner_specialClass" layoutX="410.0" layoutY="120.0" prefHeight="30.0" prefWidth="80.0" />
-                  <Label layoutX="531.0" layoutY="125.0" prefHeight="20.0" prefWidth="36.0" text="\$0.0">
+                  <Spinner fx:id="vizyondakiFilmler_vipAdet" layoutX="489.0" layoutY="120.0" prefHeight="30.0" prefWidth="80.0" />
+                  <Label fx:id="vizyondakiFilmler_vipFiyat" layoutX="610.0" layoutY="125.0" prefHeight="20.0" prefWidth="36.0" text="\$0.0">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="310.0" layoutY="175.0" text="Special Class :">
+                  <Label layoutX="377.0" layoutY="175.0" text="Standart Salon :">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Spinner fx:id="spinner_normalClass" layoutX="410.0" layoutY="170.0" prefHeight="30.0" prefWidth="80.0" />
-                  <Label layoutX="531.0" layoutY="175.0" prefHeight="20.0" prefWidth="36.0" text="\$0.0">
+                  <Spinner fx:id="vizyondakiFilmler_standartAdet" layoutX="489.0" layoutY="170.0" prefHeight="30.0" prefWidth="80.0" />
+                  <Label fx:id="vizyondakiFilmler_standartFiyat" layoutX="610.0" layoutY="175.0" prefHeight="20.0" prefWidth="36.0" text="\$0.0">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="574.0" layoutY="210.0" text="Toplam : ">
+                  <Label layoutX="653.0" layoutY="210.0" text="Toplam : ">
                      <font>
                         <Font name="Microsoft Sans Serif" size="22.0" />
                      </font>
                   </Label>
-                  <Label fx:id="lbl_totalPrice" layoutX="655.0" layoutY="210.0" prefHeight="27.0" prefWidth="62.0" text="\$0.0">
+                  <Label fx:id="vizyondakiFilmler_toplam" layoutX="734.0" layoutY="210.0" prefHeight="27.0" prefWidth="62.0" text="\$0.0">
                      <font>
                         <Font name="Microsoft Sans Serif" size="22.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btn_clear" layoutX="260.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #903c72; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Temizle" />
-                  <Button fx:id="btn_receipt" layoutX="560.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #a88a44; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Yazdır" />
-                  <Button fx:id="btn_buy" layoutX="705.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #3b8b88; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Satın Al" />
+                  <Button fx:id="vizyondakiFilmler_temizleBtn" layoutX="349.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #903c72; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Temizle" />
+                  <Button fx:id="vizyondakiFilmler_yazdirBtn" layoutX="649.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #a88a44; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Yazdır" />
+                  <Button fx:id="vizyondakiFilmler_satinAlBtn" layoutX="794.0" layoutY="265.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: #3b8b88; -fx-text-fill: white; -fx-background-radius: 8; -fx-font-weight: bold; -fx-cursor: hand;" styleClass="ekle-btn" stylesheets="@designDashboard.css" text="Satın Al" />
+                  <ImageView fx:id="vizyondakiFilmler_gorsel" fitHeight="190.0" fitWidth="130.0" layoutX="118.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
                </children>
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="193.0" layoutY="35.0" prefHeight="671.0" prefWidth="995.0" visible="false">
+      <AnchorPane fx:id="dashboard_form" layoutX="193.0" layoutY="35.0" prefHeight="671.0" prefWidth="995.0" visible="false">
          <children>
             <AnchorPane prefHeight="671.0" prefWidth="995.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <AnchorPane layoutX="1.0" layoutY="4.0" prefHeight="236.0" prefWidth="987.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+                  <AnchorPane layoutX="8.0" layoutY="4.0" prefHeight="236.0" prefWidth="973.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                      <children>
                         <AnchorPane layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
                            <children>
@@ -284,7 +281,7 @@
                                     <Font name="Microsoft Sans Serif" size="22.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="14.0" text="1500" textFill="WHITE">
+                              <Label fx:id="dashboard_ToplamSatilanBilet" alignment="CENTER_RIGHT" layoutX="211.0" layoutY="14.0" text="1500" textFill="WHITE">
                                  <font>
                                     <Font name="Berlin Sans FB" size="30.0" />
                                  </font>
@@ -295,7 +292,7 @@
                               <String fx:value="card" />
                            </styleClass>
                         </AnchorPane>
-                        <AnchorPane layoutX="337.0" layoutY="15.0" prefHeight="200.0" prefWidth="321.0">
+                        <AnchorPane layoutX="326.0" layoutY="15.0" prefHeight="200.0" prefWidth="321.0">
                            <children>
                               <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card2-left" stylesheets="@designDashboard.css">
                                  <children>
@@ -305,12 +302,12 @@
                                        </image>
                                     </ImageView>
                                  </children></AnchorPane>
-                              <Label layoutX="80.0" layoutY="151.0" text="Günlük Toplam Kazanç" textFill="WHITE">
+                              <Label layoutX="179.0" layoutY="151.0" text="Toplam Ciro" textFill="WHITE">
                                  <font>
                                     <Font name="Microsoft Sans Serif" size="22.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER_RIGHT" layoutX="225.0" layoutY="14.0" text="1500" textFill="WHITE">
+                              <Label fx:id="dashboard_ToplamCiro" alignment="CENTER_RIGHT" layoutX="225.0" layoutY="14.0" text="1500" textFill="WHITE">
                                  <font>
                                     <Font name="Berlin Sans FB" size="30.0" />
                                  </font>
@@ -321,7 +318,7 @@
                               <String fx:value="card" />
                            </styleClass>
                         </AnchorPane>
-                        <AnchorPane layoutX="675.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
+                        <AnchorPane layoutX="665.0" layoutY="15.0" prefHeight="200.0" prefWidth="298.0">
                            <children>
                               <AnchorPane prefHeight="200.0" prefWidth="80.0" styleClass="card3-left" stylesheets="@designDashboard.css">
                                  <children>
@@ -331,12 +328,12 @@
                                        </image>
                                     </ImageView>
                                  </children></AnchorPane>
-                              <Label layoutX="106.0" layoutY="154.0" text="Mevcut Filmler" textFill="WHITE">
+                              <Label layoutX="139.0" layoutY="154.0" text="Mevcut Filmler" textFill="WHITE">
                                  <font>
                                     <Font name="Microsoft Sans Serif" size="22.0" />
                                  </font>
                               </Label>
-                              <Label alignment="CENTER_RIGHT" layoutX="220.0" layoutY="17.0" text="1500" textFill="WHITE">
+                              <Label fx:id="dashboard_MevcutFilmler" alignment="CENTER_RIGHT" layoutX="220.0" layoutY="17.0" text="1500" textFill="WHITE">
                                  <font>
                                     <Font name="Berlin Sans FB" size="30.0" />
                                  </font>
@@ -349,7 +346,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <ImageView fitHeight="413.0" fitWidth="980.0" layoutX="5.0" layoutY="252.0">
+                  <ImageView fitHeight="404.0" fitWidth="918.0" layoutX="30.0" layoutY="252.0">
                      <image>
                         <Image url="@WIN_20260428_17_11_54_Pro.jpg" />
                      </image>
@@ -358,14 +355,14 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="195.0" layoutY="35.0" prefHeight="678.0" prefWidth="987.0">
+      <AnchorPane fx:id="gosterimAyarlari_form" layoutX="195.0" layoutY="35.0" prefHeight="678.0" prefWidth="987.0" visible="false">
          <children>
             <AnchorPane layoutX="249.0" layoutY="165.0" prefHeight="678.4" prefWidth="987.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-            <AnchorPane layoutX="31.0" layoutY="15.0" prefHeight="651.0" prefWidth="246.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+            <AnchorPane layoutX="10.0" layoutY="15.0" prefHeight="651.0" prefWidth="282.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                <children>
-                  <AnchorPane layoutX="23.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+                  <AnchorPane layoutX="41.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                      <children>
-                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="gosterimAyarlari_gorsel" fitHeight="200.0" fitWidth="200.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
                            <styleClass>
                               <String fx:value="bg-white" />
                               <String fx:value="bg-white" />
@@ -373,7 +370,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <Label alignment="CENTER" layoutX="33.0" layoutY="249.0" prefHeight="27.0" prefWidth="187.0" text="Label">
+                  <Label fx:id="gosterimAyarlari_baslık" alignment="CENTER" layoutX="33.0" layoutY="249.0" prefHeight="27.0" prefWidth="187.0" text="Label">
                      <font>
                         <Font name="Berlin Sans FB" size="24.0" />
                      </font>
@@ -383,27 +380,93 @@
                         <Font name="Berlin Sans FB" size="14.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="81.0" layoutY="335.0" prefWidth="150.0" promptText="Seçiniz" stylesheets="@designDashboard.css" />
-                  <Label layoutX="14.0" layoutY="337.0" text="Current:">
+                  <ComboBox fx:id="gosterimAyarlari_durum" layoutX="94.0" layoutY="335.0" prefWidth="150.0" promptText="Seçiniz" stylesheets="@designDashboard.css" />
+                  <Label layoutX="27.0" layoutY="337.0" text="Durum :">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Button layoutX="14.0" layoutY="425.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" styleClass="guncelle-btn" stylesheets="@designDashboard.css" text="Güncelle" />
-                  <Button layoutX="151.0" layoutY="425.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" styleClass="temizle-btn" stylesheets="@designDashboard.css" text="Sil" />
+                  <Button fx:id="gosterimAyarlari_guncelleBtn" layoutX="33.0" layoutY="425.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" styleClass="guncelle-btn" stylesheets="@designDashboard.css" text="Güncelle" />
+                  <Button fx:id="gosterimAyarlari_silBtn" layoutX="151.0" layoutY="425.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="80.0" styleClass="temizle-btn" stylesheets="@designDashboard.css" text="Sil" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="304.0" layoutY="19.0" prefHeight="651.0" prefWidth="658.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+            <AnchorPane layoutX="307.0" layoutY="19.0" prefHeight="651.0" prefWidth="667.0" styleClass="bg-white" stylesheets="@designDashboard.css">
                <children>
-                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="217.0" />
-                  <TableView layoutX="13.0" layoutY="57.0" prefHeight="590.0" prefWidth="666.0" styleClass="tablo" stylesheets="@designDashboard.css">
+                  <TableView fx:id="gosterimAyarlari_tablo" layoutX="13.0" layoutY="57.0" prefHeight="590.0" prefWidth="646.0" styleClass="tablo" stylesheets="@designDashboard.css">
                      <columns>
-                        <TableColumn prefWidth="128.00009155273438" text="Movie Title" />
-                        <TableColumn prefWidth="93.59991455078125" text="Genre" />
-                        <TableColumn prefWidth="109.5999755859375" text="Duration" />
-                        <TableColumn prefWidth="114.4000244140625" text="Current" />
+                        <TableColumn fx:id="gosterimAyarlari_kln_filmAdi" prefWidth="172.0" text="Film Adı" />
+                        <TableColumn fx:id="gosterimAyarlari_kln_filmTuru" prefWidth="163.99993896484375" text="Film Türü" />
+                        <TableColumn fx:id="gosterimAyarlari_kln_filmSuresi" prefWidth="152.7999267578125" text="Film Süresi" />
+                        <TableColumn fx:id="gosterimAyarlari_kln_durum" prefWidth="177.60009765625" text="Durum" />
                      </columns>
                   </TableView>
+                  <TextField fx:id="gosterimAyarlari_search" accessibleText="Search" layoutX="28.0" layoutY="18.0" prefHeight="26.0" prefWidth="254.0" promptText="Search" styleClass="search" stylesheets="@designDashboard.css" />
+                  <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="33.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@searchIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="musteriler_form" layoutX="193.0" layoutY="36.0" prefHeight="678.0" prefWidth="995.0" visible="false">
+         <children>
+            <AnchorPane layoutX="342.0" layoutY="179.0" prefHeight="678.4" prefWidth="995.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="651.0" prefWidth="331.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+                     <children>
+                        <Label layoutX="49.0" layoutY="48.0" prefWidth="56.0" text="Bilet No :">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font></Label>
+                        <TextField fx:id="musteriler_biletNo" layoutX="115.0" layoutY="44.0" prefHeight="26.0" prefWidth="178.0" />
+                        <Label layoutX="48.0" layoutY="82.0" prefWidth="56.0" text="Film Adı :">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="musteriler_filmAdi" layoutX="116.0" layoutY="78.0" prefHeight="26.0" prefWidth="178.0" />
+                        <Label layoutX="20.0" layoutY="115.0" prefHeight="18.0" prefWidth="92.0" text="Toplam Tutar :">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="musteriler_toplamTutar" layoutX="118.0" layoutY="111.0" prefHeight="26.0" prefWidth="178.0" />
+                        <Label layoutX="33.0" layoutY="153.0" prefHeight="18.0" prefWidth="80.0" text="Satış Tarihi :">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="musteriler_satisTarihi" layoutX="119.0" layoutY="149.0" prefHeight="26.0" prefWidth="178.0" />
+                        <Label layoutX="36.0" layoutY="189.0" prefHeight="18.0" prefWidth="80.0" text="Satış Saati :">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="musteriler_satisSaati" layoutX="121.0" layoutY="185.0" prefHeight="26.0" prefWidth="178.0" />
+                        <Button fx:id="musteriler_temizleBtn" layoutX="39.0" layoutY="279.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" styleClass="temizle-btn" stylesheets="@designDashboard.css" text="Temizle" />
+                        <Button fx:id="musteriler_silBtn" layoutX="181.0" layoutY="279.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" styleClass="sil-btn" stylesheets="@designDashboard.css" text="Sil" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="358.0" layoutY="13.0" prefHeight="651.0" prefWidth="626.0" styleClass="bg-white" stylesheets="@designDashboard.css">
+                     <children>
+                        <TableView fx:id="musteriler_tablo" layoutX="18.0" layoutY="69.0" prefHeight="566.0" prefWidth="599.0" styleClass="tablo" stylesheets="@designDashboard.css">
+                          <columns>
+                            <TableColumn fx:id="musteriler_kln_biletNumarasi" prefWidth="109.60003662109375" text="Bilet Numarası" />
+                            <TableColumn fx:id="musteriler_kln_filmAdi" prefWidth="118.4000244140625" text="Film Adı" />
+                              <TableColumn fx:id="musteriler_kln_toplamTutar" prefWidth="108.79998779296875" text="Toplam Tutar" />
+                              <TableColumn fx:id="musteriler_kln_islemTarihi" prefWidth="128.7999267578125" text="İşlem Tarihi" />
+                              <TableColumn fx:id="musteriler_kln_islemSaati" prefWidth="134.4000244140625" text="İşlem Saati" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="musteriler_search" layoutX="40.0" layoutY="23.0" prefHeight="26.0" prefWidth="242.0" promptText="Search" styleClass="search" stylesheets="@designDashboard.css" />
+                        <ImageView fitHeight="22.0" fitWidth="36.0" layoutX="43.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@searchIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
                </children>
             </AnchorPane>
          </children>
