@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class database {
 
-    public static Connection connetDb() {
+    public static Connection connectDb() {
         Connection connect = null; // 1. Değişkeni dışarıda tanımla
         try {
             Class.forName("com.mysql.jdbc.Driver");

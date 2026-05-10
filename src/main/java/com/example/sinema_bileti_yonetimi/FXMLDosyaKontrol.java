@@ -94,7 +94,7 @@ public class FXMLDosyaKontrol implements Initializable {
     {
        String sql = "INSERT INTO admin (email,username,password) VALUES (?,?,?)";
 
-       connect =database.connetDb();
+       connect =database.connectDb();
        try{
            prepare=connect.prepareStatement(sql);
            prepare.setString(1,signUp_email.getText());
@@ -142,7 +142,7 @@ public class FXMLDosyaKontrol implements Initializable {
     @FXML
     private void signin() {
         String sql = "SELECT * FROM admin WHERE username = ? and password = ?";
-        connect = database.connetDb();
+        connect = database.connectDb();
 
         try {
             prepare = connect.prepareStatement(sql);
