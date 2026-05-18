@@ -122,7 +122,7 @@ public class FXMLdashboardKontrol implements Initializable {
     private String[] gosterimList = {"Vizyonda", "Vizyondan Kalktı"};
 
     // Bir butona basınca ilgili formu açar, diğerlerini gizler
-
+    //SAYFALAR ARASI GEÇİŞ
     public void switchForm(ActionEvent event) {
         dashboard_form.setVisible(event.getSource() == dashboard_btn);
         filmEkle_form.setVisible(event.getSource() == filmEkle_btn);
@@ -147,6 +147,8 @@ public class FXMLdashboardKontrol implements Initializable {
         }
     }
 
+
+    //FİLM EKLE KISMI
     // Veritabanındaki tüm filmleri liste olarak çeker
 
     public ObservableList<filmData> filmEkleList() {
@@ -251,6 +253,7 @@ public class FXMLdashboardKontrol implements Initializable {
         }
     }
 
+    //FİLM EKLE GÜNCELLE BUTONU
     // Mevcut filmi ID üzerinden günceller
 
     public void updateFilmEkle() {
@@ -335,7 +338,7 @@ public class FXMLdashboardKontrol implements Initializable {
         updateID = 0;
     }
 
-    // Arama çubuğu için filtreleme fonksiyonu
+    // Arama çubuğu için filtreleme fonksiyonu//
 
     public void searchFilmEkle() {
         if (filmEkle_Search == null) return;
@@ -389,7 +392,7 @@ public class FXMLdashboardKontrol implements Initializable {
         gorsel = new Image(uri, 200, 200, false, true);
         gosterimAyarlari_imageView.setImage(gorsel);
     }
-
+//VİZYONDA  veya VİZYONDAN KALDIR KISMI
     public void gosterimAyarlariGuncelle() {
         String sql = "UPDATE film SET durum = ? WHERE id = ?";
         connect = database.connectDb();
@@ -550,8 +553,8 @@ public class FXMLdashboardKontrol implements Initializable {
         vAdet = vizyondakiFilmler_vipAdet.getValue();
         sAdet = vizyondakiFilmler_standartAdet.getValue();
 
-        vFiyat = (vAdet * 150.0);
-        sFiyat = (sAdet * 100.0);
+        vFiyat = (vAdet * 400.0);
+        sFiyat = (sAdet * 200.0);
         toplamOdeme = vFiyat + sFiyat;
 
         // Metni formatlayarak yazıyoruz
@@ -559,7 +562,7 @@ public class FXMLdashboardKontrol implements Initializable {
         vizyondakiFilmler_standartFiyat.setText(String.format("%.1f TL", sFiyat));
         vizyondakiFilmler_toplam.setText(String.format("%.1f TL", toplamOdeme));
 
-        // Label kesilme sorunu çözümü
+        // Label kesilme sorunu çözümü//sıkıştırma labelleri sığması iççin
         vizyondakiFilmler_vipFiyat.setMinWidth(Region.USE_PREF_SIZE);
         vizyondakiFilmler_standartFiyat.setMinWidth(Region.USE_PREF_SIZE);
         vizyondakiFilmler_toplam.setMinWidth(Region.USE_PREF_SIZE);
@@ -711,7 +714,9 @@ public class FXMLdashboardKontrol implements Initializable {
         }
     }
 
-    //musteriler formu kısmı
+
+    //Musteriler formu kısmı
+
     // Veritabanından verileri çekip listeye atar
     public ObservableList<musterilerData> musterilerListData() {
         ObservableList<musterilerData> listData = FXCollections.observableArrayList();
@@ -882,6 +887,8 @@ private void alertMesaj(Alert.AlertType tip, String mesaj) {
         alert.showAndWait();
     }
 
+
+    //DASHBOADDA İSİM GÖSTER
     public void usernameGoster() {
         username.setText(getData.username);
     }

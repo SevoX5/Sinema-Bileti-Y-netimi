@@ -1,9 +1,9 @@
 ********** SİNEMA BİLETİ MAKBUZU **********
 Müşteri ID: 1
-Film: kcdkmcdc
-Tarih: 2026-05-10
+Film: BASLANGIÇ
+Tarih: 2026-05-18
 ------------------------------------------
-VIP Bilet (1 adet): 150.0 TL
+VIP Bilet (1 adet): 400.0 TL
 ------------------------------------------
-TOPLAM TUTAR: 150.0 TL
+TOPLAM TUTAR: 400.0 TL
 ******************************************

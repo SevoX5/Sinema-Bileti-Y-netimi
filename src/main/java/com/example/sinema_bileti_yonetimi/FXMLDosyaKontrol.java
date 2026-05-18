@@ -90,7 +90,7 @@ public class FXMLDosyaKontrol implements Initializable {
 
     //login ve register için gerekli fonksiyonlar
     @FXML
-    private  void signUp()
+    private  void signUp()//kayıt ol sayfası
     {
        String sql = "INSERT INTO admin (email,username,password) VALUES (?,?,?)";
 
@@ -109,7 +109,7 @@ public class FXMLDosyaKontrol implements Initializable {
                alert.setHeaderText(null);
                alert.setContentText("Lütfen tüm alanları doldurunuz.");
                alert.showAndWait();
-               
+               // ŞİFRE EN AZ 8 KARAKTER OLMALI
            } else if (signUp_password.getText().length()<8) {
 
                alert = new Alert(Alert.AlertType.ERROR);

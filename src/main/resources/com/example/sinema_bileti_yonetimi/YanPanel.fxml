@@ -13,7 +13,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anasayfa_form" prefHeight="715.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinema_bileti_yonetimi.FXMLdashboardKontrol">
@@ -348,7 +347,16 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <MediaView fx:id="dashboard_video" fitHeight="380.0" fitWidth="950.0" layoutX="23.0" layoutY="265.0" />
+                  <ImageView fitHeight="364.0" fitWidth="699.0" layoutX="272.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dash.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="364.0" fitWidth="716.0" layoutX="38.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dash3.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
