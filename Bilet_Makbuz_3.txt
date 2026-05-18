@@ -1,9 +1,9 @@
 ********** SİNEMA BİLETİ MAKBUZU **********
 Müşteri ID: 4
-Film: krk
-Tarih: 2026-05-10
+Film: SOMUNCU BABA
+Tarih: 2026-05-17
 ------------------------------------------
-VIP Bilet (1 adet): 150.0 TL
+VIP Bilet (1 adet): 200.0 TL
 ------------------------------------------
-TOPLAM TUTAR: 150.0 TL
+TOPLAM TUTAR: 200.0 TL
 ******************************************
